@@ -1,4 +1,4 @@
-# Exercie Algo + Serveur
+# Exercice Algo + Serveur
 
 L'oncle Owen voudrait un serveur web pour connaitre l'état de ses champs... il cultive une terre arride et il faut installé des piéges à humidité pour rendre des parcelles cultivables.
 
