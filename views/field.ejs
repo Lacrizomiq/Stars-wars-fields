@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= field.name %></title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(<%= field.size %>, 30px);
+        gap: 2px;
+      }
+      .grid div {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #000;
+      }
+      .O {
+        background-color: blue;
+      }
+      .C {
+        background-color: green;
+      }
+      .X {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><%= field.name %></h1>
+    <p>Nombre de parcelles cultivables : <%= totalCultivable %></p>
+    <div class="grid">
+      <% cultivableGrid.forEach(row => { %> <% row.forEach(cell => { %>
+      <div class="<%= cell %>"><%= cell %></div>
+      <% }) %> <% }) %>
+    </div>
+  </body>
+</html>

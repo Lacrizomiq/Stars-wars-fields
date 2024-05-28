@@ -1,0 +1,16 @@
+{
+  "name": "exo",
+  "version": "1.0.0",
+  "description": "L'oncle Owen voudrait un serveur web pour connaitre l'état de ses champs... il cultive une terre arride et il faut installé des piéges à humidité pour rendre des parcelles cultivables.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
